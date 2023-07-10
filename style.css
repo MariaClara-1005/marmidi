@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #c7ef7e;
+    padding-top: 70px;
+    color: black;
+}
+body::before {
+    content: "";
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/03/13/20/diet-1949442_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 0.7;
+}
+.topo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: orange;
+    margin: 8px;
+    transition: 0.3s;
+}
+.nav-list.active {
+    transform: translateX(0);
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #d2e7ab;
+    height: 10.5vh;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+.nav-list li {
+    letter-spacing: 2px;
+    margin-left: 32px;
+}
+a, b{
+    color: #09354b;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a:hover {
+    opacity: 0.8;
+    color: rgb(255, 89, 0);
+}
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.home {
+    text-align: center;
+    letter-spacing: 2px;
+    height: 100vh;
+    background-image: url('https://cdn.pixabay.com/photo/2016/05/24/13/29/olive-oil-1412361_1280.jpg');
+    background-size: cover;
+}
+.home .centralizar-texto {
+    padding-top: 20%;
+}
+.home h2 {
+    color: white;
+    background-color: #f0c153bc;
+    width: 50%;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+.botao-inicial a {
+    background-color: #143914;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: solid #488d37;
+}
+.botao-inicial a:hover {
+    background-color: #f99e0b;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: solid #a0670b;
+}
+
+.selecao-do-cardapio{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+}
+
+.selecao-do-cardapio .lista-de-itens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.selecao-do-cardapio .itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 585px;
+    gap: 25px;
+}
+
+.selecao-do-cardapio .itens .titulo {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f96c08;
+    width: 100%;
+    text-align: center;
+}
+
+.selecao-do-cardapio .item img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #f96c08;
+
+}
+
+.lista-de-itens .item.selecionado {
+    box-shadow: 0px 0px 24px 5px #02f70e;
+
+}
+.item-selecionado {
+    text-align: center;
+    list-style: none;
+    max-height: 530px;
+}
+
+.item-selecionado .item-grande{
+    width: 430px;
+    height: 430px;
+}
+
+.item-selecionado .nome-item{
+    border-bottom: 2px solid #f96c08;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.item-selecionado .descricao-item{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: left;
+    margin-top: 20px;
+    width: 420px;
+}
+
+.sobre {
+        text-align: center;
+        letter-spacing: 2px;
+        width: 100%;
+        background: #5c8411;
+        background-size: cover;
+}
+.sobre .lista-sobre {
+    display: flex;
+    align-items: center;
+    width: 65%;
+    gap: 35px;
+    margin: 0 auto;
+}
+.sobre .titulo {
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #f96c08;
+    width: 100%;
+    text-align: center;
+    color: #092f09;
+}
+.contato {
+    text-align: center;
+    letter-spacing: 2px;
+    width: 100%;
+    background-size: cover;
+}
+.info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #edaf3a;
+    height: 10.5vh;
+    background-size: cover;
+}
+footer {
+    color: #414441;
+    padding: 8px;
+    text-align: center;
+}
+footer a {
+    color: #414441
+}
