@@ -19,7 +19,7 @@ itens.forEach((item) => {
         const descricaoItem = document.getElementById('descricao-item');
         descricaoItem.innerText = item.getAttribute('data-description')
     })
-});
+})
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -29,7 +29,6 @@ class MobileNavbar {
   
       this.handleClick = this.handleClick.bind(this);
     }
-  
     animateLinks() {
       this.navLinks.forEach((link, index) => {
         link.style.animation
@@ -39,17 +38,14 @@ class MobileNavbar {
             }s`);
       });
     }
-  
     handleClick() {
       this.navList.classList.toggle(this.activeClass);
       this.mobileMenu.classList.toggle(this.activeClass);
       this.animateLinks();
     }
-  
     addClickEvent() {
       this.mobileMenu.addEventListener("click", this.handleClick);
     }
-  
     init() {
       if (this.mobileMenu) {
         this.addClickEvent();
@@ -57,7 +53,6 @@ class MobileNavbar {
       return this;
     }
   }
-  
   const mobileNavbar = new MobileNavbar(
     ".mobile-menu",
     ".nav-list",
