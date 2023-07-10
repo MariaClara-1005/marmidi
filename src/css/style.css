@@ -25,6 +25,20 @@ body::before {
     top: 0;
     left: 0;
 }
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: orange;
+    margin: 8px;
+    transition: 0.3s;
+}
+.nav-list.active {
+    transform: translateX(0);
+}
 nav {
     display: flex;
     justify-content: space-around;
@@ -190,4 +204,12 @@ a:hover {
     background: #edaf3a;
     height: 10.5vh;
     background-size: cover;
+}
+footer {
+    color: #414441;
+    padding: 8px;
+    text-align: center;
+}
+footer a {
+    color: #414441
 }
